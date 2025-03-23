@@ -48,9 +48,21 @@ let arrayy = ['trm', 'ttm', 'tnm','at','trm', 'ttm', 'tnm','at']
 
 // ! 5 fungtion
 
-function fung(a,b){
-let result = a+b;
-return result;
+// function fung(a,b){
+// let result = a+b;
+// return result;
+// }
+// const funge= fung(2,4);
+// console.log(funge);
+
+// !6 object 
+
+const mane = {
+    name: 'tanjil',
+    age: 23,
+    study: true,
+    info: arrayy,
 }
-const funge= fung(2,4);
-console.log(funge);
+mane.name='tanvir'
+console.log(mane);
+// console.log(mane.info.join(''));
