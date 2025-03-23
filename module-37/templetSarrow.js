@@ -1,4 +1,4 @@
-// ! 1 tampletString 
+// ! 1 templetString 
 
 let fName = 'tanjil';
 let lName = 'tanvir';
@@ -22,3 +22,13 @@ console.log(fullNmae);
 const arroww=(a,b,c)=>a+b+c;
 
 console.log(arroww(3,2,2));
+
+// !3spread operator
+
+const num1= [1,2,3,4,5];
+const num2 = [6,7,8,9,0]
+
+const mainNum = [...num1,...num2];
+const mainNum1 = [num1,6,7,8];
+console.log(mainNum);
+console.log(mainNum1);
