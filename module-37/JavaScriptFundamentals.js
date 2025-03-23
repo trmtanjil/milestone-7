@@ -36,5 +36,21 @@ let arrayy = ['trm', 'ttm', 'tnm','at','trm', 'ttm', 'tnm','at']
 // arrayy.unshift('mmr')
 // arrayy.shift()
 
-console.log(arrayy.slice(1,3));
-console.log(arrayy.splice(1,3));
+// console.log(arrayy.slice(1,3));
+// console.log(arrayy.splice(1,3));
+
+// ! 4 loop 
+
+// for(let i= 0 ; i<arrayy.length; i++){
+//     const index = arrayy[i]
+//     console.log(index);
+// }
+
+// ! 5 fungtion
+
+function fung(a,b){
+let result = a+b;
+return result;
+}
+const funge= fung(2,4);
+console.log(funge);
