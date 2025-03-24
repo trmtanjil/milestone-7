@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like/Dislike Example</title>
+</head>
+<style>
+    .maiin{
+        display: flex;
+       justify-content: space-around;
+       background: #edf107;
+       padding: 10px;
+       border-radius: 10px
+    };
+    
+</style>
+<body>
+ <div  class="maiin">
+    <div>
+        <button id="likeBtn"><img class="img" src="./image.png" alt="" width="20px"></button>
+        <p>if you ar love me click hear</p>
+       </div>
+    <div>
+        <h1 > <span id="likeCount"  style="font-size: 40px;border: 2px dotted red; padding: 10px; border-radius: 4px;">0</span></h1>
+        <p>tomi amare kotobar valo baso</p>
+    </div>       
+      <div>  <button  id="dislikeBtn"><img class="img" src="./img/image.png" alt="" width="20px"></button>
+        <p>if you ar dont pochondo me click heaar </p>
+    </div>
+ </div>
+
+    <script>
+        let likeCount = 0;
+
+        document.getElementById('likeBtn').addEventListener('click', function() {
+            likeCount++;
+            document.getElementById('likeCount').textContent = likeCount;
+        });
+
+        document.getElementById('dislikeBtn').addEventListener('click', function() {
+            if (confirm('ami jani tomi amare valo vaso?')) {
+                likeCount--;
+                if (likeCount < 0) likeCount = 0;
+                document.getElementById('likeCount').textContent = likeCount;
+            }
+        });
+    </script>
+</body>
+</html>
