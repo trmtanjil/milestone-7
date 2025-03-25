@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+.singer{
+  border:2px solid red;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

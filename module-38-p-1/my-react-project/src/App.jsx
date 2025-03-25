@@ -1,13 +1,33 @@
 import './App.css'
 import ToDo from './todo'
 import Info from './info';
+import Actor from './Actor';
+import Singer from './singer';
 
 function App() {
+  const acto=['hena', 'manna','bappa','saban']
+  // const acto=['hena', '{name: 'namma'}','bappa','saban']
+
+  const singer=[
+    {id: 1, name:'mahfuz',age:68},
+    {id: 2, name:'tahsan',age:48},
+    {id: 3, name:'jayd',age:18},
+    {id: 4, name:'hero alom',age:12}
+  ]
 
   const time = 50;
   return (
     <>
       <h1>Vite + React</h1>
+
+    {
+      singer.map(singer=><Singer singer={singer} key={singer.id}></Singer>)
+    }
+    {/* {
+      acto.map(antor=><Actor actor={antor}></Actor>)
+       // acto.map(actor=><Actor actor={actor.name}></Actor>)
+    } */}
+
 
     <Info isok={true} name='tanjil' time={time}></Info>
     {/* <Info isok={false} name='tanjil'></Info>
@@ -34,12 +54,19 @@ function App() {
 }
 
 function Myinfo({name,age,home,work,gf,gfname}){
+
   return(
+    
     <div style={{
       border: '3px solid red',
       margin: '5px',
       borderRadius: '10px',
     }}>
+   
+
+
+
+
       <h3>Name:{name}</h3>
       <p>age:{age}</p>
       <p>Home:{home}</p>
