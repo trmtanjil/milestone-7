@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Counter from './Counter';
+import PlayerRun from './PlayerRun';
 import './App.css'
 
 function App() {
@@ -22,6 +23,8 @@ const handelAdd5=(num)=>{
   return (
     <>
       <h3>Vite + React</h3>
+    <PlayerRun></PlayerRun>
+
      <Counter></Counter>
 
    
