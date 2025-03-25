@@ -5,6 +5,11 @@ function App() {
     <>
       <h1>Vite + React</h1>
       <Student></Student>
+      <Cricket name='tamim' runs= '5000' age= '39'></Cricket>
+      <Cricket name='afridi' runs= '8000' age= '49'></Cricket>
+      <Cricket name='moshi' runs= '9000' age= '19'></Cricket>
+
+
       {/* <Person></Person>
       <Developor name='tanjil'age='22' tec=' cst'></Developor>
     <Developor name='tanvir'age='26' tec=' science'></Developor> */}
@@ -14,6 +19,22 @@ function App() {
         <Mobilphone model='samphone11' brand='sampony' camara='true'></Mobilphone>
 
     </>
+  )
+}
+
+function Cricket({name, age, runs}){
+  return(
+    <div style={{
+      border: '3px solid red',
+      margin: '5px',
+      borderRadius: '10px',
+
+    }}>
+      <h2>Cricket</h2>
+      <h3>player Name : {name}</h3>
+      <p>runs :{runs} </p>
+      <p>age : {age}</p>
+    </div>
   )
 }
 
@@ -92,3 +113,4 @@ function Mobilphone(mobileInfo){
   )
 }
 export default App
+ 
