@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import Counter from './Counter';
 import './App.css'
 
 function App() {
@@ -23,7 +22,8 @@ const handelAdd5=(num)=>{
   return (
     <>
       <h3>Vite + React</h3>
-     
+     <Counter></Counter>
+
    
    <button onClick={handaling}>click</button>
    <button style={{margin:'11px'}} onClick={function handaling2(){alert('clicked2')}}>click 2</button>
