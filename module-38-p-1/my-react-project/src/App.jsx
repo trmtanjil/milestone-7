@@ -1,24 +1,46 @@
 import './App.css'
+import ToDo from './todo'
 
 function App() {
+
+  const time = 50;
   return (
     <>
       <h1>Vite + React</h1>
-      <Student></Student>
+      <ToDo task='read js' isDone={true} time={time}></ToDo>
+      <ToDo task='read veu' isDone={false}></ToDo>
+      <ToDo task='read css' isDone={true} time='100 '></ToDo>
+      
+
+      {/* <Student></Student>
       <Cricket name='tamim' runs= '5000' age= '39'></Cricket>
       <Cricket name='afridi' runs= '8000' age= '49'></Cricket>
       <Cricket name='moshi' runs= '9000' age= '19'></Cricket>
-
-
-      {/* <Person></Person>
+      <Person></Person>
       <Developor name='tanjil'age='22' tec=' cst'></Developor>
-    <Developor name='tanvir'age='26' tec=' science'></Developor> */}
-
+    <Developor name='tanvir'age='26' tec=' science'></Developor>
         <Mobilphone model='s20Ultra' brand='samsung' camara='true'></Mobilphone>
         <Mobilphone model='iPhon13' brand='apple' camara='true'></Mobilphone>
         <Mobilphone model='samphone11' brand='sampony' camara='true'></Mobilphone>
-
+        <Myinfo name='tanji'age={23}home="Narsindi"work="student"gf={true}gfname="programming😁"></Myinfo> */}
     </>
+  )
+}
+
+function Myinfo({name,age,home,work,gf,gfname}){
+  return(
+    <div style={{
+      border: '3px solid red',
+      margin: '5px',
+      borderRadius: '10px',
+    }}>
+      <h3>Name:{name}</h3>
+      <p>age:{age}</p>
+      <p>Home:{home}</p>
+      <p>work:{work}</p>
+      <p>gf:{gf}</p>
+      <p>gfName:{gfname}</p>
+    </div>
   )
 }
 
