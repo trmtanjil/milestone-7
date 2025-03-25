@@ -21,9 +21,27 @@
 export default function Info({name, isok, time=0}){
     // return isok || <li>not name is : {name}, time: {time}</li>
     return(
-        <li>
+     <div style={{
+        borderRadius:'10px',
+        border:'3px solid red'
+     }}>
+           <li>
            my name {name}{isok && "🥲🙂"}
         </li>
+        <div style={{
+            padding: '3px',
+            
+        }}>
+            <button style={{margin:'2px', background:'green',color:'black',
+            }}>click -1</button>
+            <button style={{margin:'2px', background:'green',color:'black',
+            }}>click -1</button>
+            <button style={{margin:'2px', background:'green',color:'black',
+            }}>click -1</button>
+            
+        </div>
+     </div>
+        
     )
 }
 

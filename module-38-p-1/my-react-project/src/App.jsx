@@ -10,8 +10,8 @@ function App() {
       <h1>Vite + React</h1>
 
     <Info isok={true} name='tanjil' time={time}></Info>
-    <Info isok={false} name='tanjil'></Info>
-    <Info isok={false} name='tanjil' time={time}></Info>
+    {/* <Info isok={false} name='tanjil'></Info>
+    <Info isok={false} name='tanjil' time={time}></Info> */}
 
       {/* <ToDo task='read js' isDone={true} time={time}></ToDo>
       <ToDo task='read veu' isDone={false}></ToDo>
