@@ -3,20 +3,30 @@ import Counter from './Counter';
 import PlayerRun from './PlayerRun';
 import Users from './users';
 import Friends from './friends';
+import Posts from './posts';
 import './App.css'
 
-const fechuser=fetch('https://jsonplaceholder.typicode.com/users')
-.then(res=>res.json())
+// const fechuser=fetch('https://jsonplaceholder.typicode.com/users')
+// .then(res=>res.json())
 
-const fechFiend =async()=>{
-  const res = await fetch('https://jsonplaceholder.typicode.com/users')
-  return  res.json()
+// const fechFiend =async()=>{
+//   const res = await fetch('https://jsonplaceholder.typicode.com/users')
+//   return  res.json()
+// }
+
+const porstData =async()=>{
+
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+  return res.json()
 }
+
 
 function App() {
   const [count, setCount] = useState(0)
 
-  const friendPromis=fechFiend();
+  // const friendPromis=fechFiend();
+  const postsPromis = porstData();
+
   function handaling(){
     alert ("all ok")
   }
@@ -34,7 +44,12 @@ const handelAdd5=(num)=>{
     <>
       <h3>Vite + React</h3>
 
-    <Suspense fallback={<h3>loading....</h3>}>
+    <Suspense fallback="all Posr are Comming...">
+    <Posts postsPromis={postsPromis}>
+    </Posts>
+    </Suspense>
+
+    {/* <Suspense fallback={<h3>loading....</h3>}>
     <Users fechuser={fechuser}></Users>
     </Suspense>
 
@@ -42,7 +57,7 @@ const handelAdd5=(num)=>{
       <Friends friendPromis={friendPromis}>
     
       </Friends>
-    </Suspense>
+    </Suspense> */}
     
 
     <PlayerRun></PlayerRun>
