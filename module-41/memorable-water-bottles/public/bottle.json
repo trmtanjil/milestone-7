@@ -1,0 +1,63 @@
+[
+    { 
+      "id": 1, 
+      "brand": "Aquafina", 
+      "color": "White", 
+      "capacity": "1L", 
+      "material": "Plastic", 
+      "weight": "500g", 
+      "lifetime": "2 years", 
+      "isCold": true, 
+      "isHot": false,
+      "img": "https://example.com/aquafina.jpg"
+    },
+    { 
+      "id": 2, 
+      "brand": "Kinley", 
+      "color": "White", 
+      "capacity": "750ml", 
+      "material": "Glass", 
+      "weight": "700g", 
+      "lifetime": "5 years", 
+      "isCold": true, 
+      "isHot": true,
+      "img": "https://example.com/kinley.jpg"
+    },
+    { 
+      "id": 3, 
+      "brand": "Bisleri", 
+      "color": "White", 
+      "capacity": "500ml", 
+      "material": "Plastic", 
+      "weight": "300g", 
+      "lifetime": "1.5 years", 
+      "isCold": true, 
+      "isHot": false,
+      "img": "https://example.com/bisleri.jpg"
+    },
+    { 
+      "id": 4, 
+      "brand": "Evian", 
+      "color": "White", 
+      "capacity": "2L", 
+      "material": "Stainless Steel", 
+      "weight": "1.2kg", 
+      "lifetime": "10 years", 
+      "isCold": true, 
+      "isHot": true,
+      "img": "https://example.com/evian.jpg"
+    },
+    { 
+      "id": 5, 
+      "brand": "Fiji", 
+      "color": "White", 
+      "capacity": "1.5L", 
+      "material": "Aluminum", 
+      "weight": "900g", 
+      "lifetime": "8 years", 
+      "isCold": false, 
+      "isHot": true,
+      "img": "https://example.com/fiji.jpg"
+    }
+  ]
+  
