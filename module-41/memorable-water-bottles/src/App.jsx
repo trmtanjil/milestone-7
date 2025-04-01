@@ -4,10 +4,13 @@ import { Suspense } from 'react'
 import './App.css'
 import Bottles from './componets/bottles/bottles';
 
-const bottlesPromise = fetch('./bottle.json')
-.then(res=>res.json())
+// const bottlesPromise = fetch('./bottle.json')
+// .then(res=>res.json())
  
+// const bottlesPromise2 = fetch('https://raw.githubusercontent.com/trmtanjil/botols-data/refs/heads/main/botols.json')
+// .then(res=>res.json())
 
+const bottlesPromise = fetch('./bottle.json').then(res=>res.json())
 
 function App() {
 
@@ -16,12 +19,13 @@ function App() {
       
       <h1>My awesome Water Bottle</h1>
    
-   <Suspense fallback={<h3>Bottles are Loading...</h3>}>
-  <Bottles bottlesPromise={bottlesPromise}>
+  <Suspense>
+    <Bottles bottlesPromise={bottlesPromise}>
 
     </Bottles>
-   
-   </Suspense>
+    </Suspense>    
+
+
     </>
   )
 }
