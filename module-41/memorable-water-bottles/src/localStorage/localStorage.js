@@ -25,6 +25,6 @@ const AddItemToCartLocalStorage = id=>{
 }
 
 export{
-    getCartFromLocalStorage, 
-    AddItemToCartLocalStorage
+    getCartFromLocalStorage as getToStorCart, 
+    AddItemToCartLocalStorage as addToStoreCart
 }
