@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       
-      <h1>My awesome Water Bottle</h1>
+      <h1 className='textCenter'>My awesome Water Bottle</h1>
    
   <Suspense>
     <Bottles bottlesPromise={bottlesPromise}>
