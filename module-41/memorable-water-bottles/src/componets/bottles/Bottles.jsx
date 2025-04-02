@@ -3,17 +3,22 @@ import Bottle from '../bottle/bottle';
 import "./bottoles.css"
 
 const Bottles = ({bottlesPromise}) => {
-    const bottoles = use(bottlesPromise)
-    
-    const [parches, setparches]=useState([])
+const bottoles = use(bottlesPromise)
 
-    const handleAddToCard= (bottle)=>{
-        console.log('bottle will be added to the cart',bottle);
+    const [cart, setcart]=useState([])
+    
+
+const handleAddToCard= (bottle)=>{
+        // console.log('bottle will be added to the cart',bottle);
+        const newCart = [...cart, bottle];
+        setcart(newCart)
+
     }
 
     return (
         <div className='justifyCenter'>
             <h3>Bottles : {bottoles.length}</h3>
+            <p>cart length : {cart.length}</p>
          <div className='flexDiv'>
          {
                 bottoles.map(bottle => <Bottle
