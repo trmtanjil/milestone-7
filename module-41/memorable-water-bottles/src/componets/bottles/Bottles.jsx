@@ -41,7 +41,7 @@ const handleAddToCard= (bottle)=>{
 
 
 const handleRemoveToCart=id=>{
-console.log(' remove frome the item cart ' ,id);
+// console.log(' remove frome the item cart ' ,id);
 
 const remainingCart = cart.filter(bottle => bottle.id !==id)
 setcart(remainingCart);

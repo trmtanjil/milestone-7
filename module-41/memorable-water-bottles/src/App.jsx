@@ -1,5 +1,5 @@
  
- 
+ import Prectic from './Prectic';
 import { Suspense } from 'react'
 import './App.css'
 import Bottles from './componets/bottles/bottles';
@@ -14,6 +14,7 @@ const bottlesPromise = fetch('./bottle.json').then(res=>res.json())
 
 function App() {
 
+  const time = 50;
   return (
     <>
       
@@ -23,6 +24,18 @@ function App() {
     <Bottles bottlesPromise={bottlesPromise}>
 
     </Bottles>
+
+
+    <Prectic name='tanjil' sub= 'js' time={time} isdone={true}>
+      
+    </Prectic>
+    <Prectic name='tanjil' sub= 'js' time={time} isdone={false}>
+      
+    </Prectic>
+
+    <Prectic  name='sharif' sub= 'react'  isdone={true}>
+
+    </Prectic>
     </Suspense>    
 
 
