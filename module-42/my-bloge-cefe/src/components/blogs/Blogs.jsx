@@ -12,7 +12,7 @@ const Blogs = () => {
     console.log(blogs);
     return (
         <div>
-            
+            <h1>total : {blogs.length}</h1>
         </div>
     );
 };
