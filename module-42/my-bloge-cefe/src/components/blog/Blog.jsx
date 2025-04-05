@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaBookmark } from "react-icons/fa";
 
-const Blog = ({blog}) => {
+const Blog = ({blog,handleBookMark}) => {
     // const {blog}= props
     const {cover,title,author,author_img}= blog
-    console.log(blog);
+    // console.log(blog);
     return (
         <div>
        
@@ -19,7 +19,7 @@ const Blog = ({blog}) => {
   <div className="author-info flex items-center gap-2 justify-around py-0.5">
   <h1 className='text-2xl'>name: {author}</h1>
   <img className='w-16' src={author_img} alt="" />
-  <FaBookmark size={25}/>
+  <button onClick={()=>handleBookMark(blog)}><FaBookmark size={25}/></button>
   </div>
   <div className="card-body">
     <h2 className="card-title">{title}</h2>
