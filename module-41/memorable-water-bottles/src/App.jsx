@@ -2,7 +2,7 @@
  import Prectic from './Prectic';
 import { Suspense } from 'react'
 import './App.css'
-import Bottles from './componets/bottles/bottles';
+// import Bottles from './componets/bottles/bottles';
 
 // const bottlesPromise = fetch('./bottle.json')
 // .then(res=>res.json())

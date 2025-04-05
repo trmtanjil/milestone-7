@@ -4,10 +4,14 @@ import './App.css'
 import TastCount from './TastCount'
 import Hideshow from './Hideshow'
 
+import ApiTask3 from './ApiTask3'
 
+const faceUser = fetch('https://jsonplaceholder.typicode.com/users')
+.then(res=>res.json())
 
 function App() {
  
+  
 
 
   return (
@@ -18,6 +22,8 @@ function App() {
         <TastCount ></TastCount>
 
         <Hideshow></Hideshow>
+
+        <ApiTask3 faceUser={faceUser}></ApiTask3>
       </Suspense>
       
     </>
