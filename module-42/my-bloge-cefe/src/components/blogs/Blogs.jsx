@@ -15,9 +15,9 @@ const Blogs = () => {
         <div>
             <h1>total : {blogs.length}</h1>
 
-            <div className="all-blogs">
+            <div className="all-blogs grid md:grid-cols-2 gap-1 justify-center mx-auto">
                 {
-                    blogs.map((blog)=><Blog blog={blog} ></Blog>)
+                    blogs.map((blog)=><Blog blog={blog} key={blog.id}></Blog>)
                 }
             </div>
         </div>
